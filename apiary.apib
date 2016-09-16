@@ -1,20 +1,25 @@
 FORMAT: 1A
 HOST: http://retail.oracle.org/
 
-# Retail - Products API
+# Retail Products API
 
-Allows clients to query for production details and product summary
+Allows clients to query for production information details product/details/{id} 
+or product summary /product/summary/{id}
 
-## Product Details [/product/details/{id}]
+
+## Product Details [/product/details/{item}]
 
 ### Get product details [GET]
+
++ Parameters
+    + item (number) - Product item number.
 
 + Response 200 (application/json)
 
         [
             {
-                "name": "Samsung 27” Widescreen LED Monitor, Black",
-                "Item#": "946479",
+                "item":"946479",
+                "name": "Samsung 27 inches Widescreen LED Monitor, Black",
                 "Manufacturer": "Samsung",
                 "model": "S27E310HS",
                 "screen type": "LED",
@@ -40,7 +45,7 @@ Allows clients to query for production details and product summary
         [
             {
                 "name": "Samsung S27E310H 27” Widescreen LED Monitor, Black",
-                "price":"189 .99",
+                "price":"189.99",
                 "summary": "Games, movies, Web surfing and viewing photos are all more fun with a crystal-clear screen. This Samsung 27" LED monitor's Mega Dynamic Contrast Ratio provides an amazingly brilliant picture that showcases entertainment and work in crisp detail."
             }
         ]
