@@ -36,14 +36,18 @@ or product summary /product/summary/{id}
         ]
 
 
-## Product Summary [/product/summary/{id}]
+## Product Summary [/product/summary/{item}]
 
 ### Get product Summary [GET]
+
++ Parameters
+    + item (number) - Product item number.
 
 + Response 200 (application/json)
 
         [
             {
+                "item": "946479",
                 "name": "Samsung S27E310H 27” Widescreen LED Monitor, Black",
                 "price":"189.99",
                 "summary": "Games, movies, Web surfing and viewing photos are all more fun with a crystal-clear screen. This Samsung 27" LED monitor's Mega Dynamic Contrast Ratio provides an amazingly brilliant picture that showcases entertainment and work in crisp detail."
